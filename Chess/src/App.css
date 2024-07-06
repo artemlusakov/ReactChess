@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+}
+.boardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boardContainer h3{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.boardContainer h2{
+    font-size: 30px;
+    margin-left: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding:0 10px ;
+}
+.cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell img {
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.black {
+    background-color: #ababab;
+}
+.white {
+    background-color: #b99d61;
+}
+
+.selected {
+    background-color: brown;
+}
+.available {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #22c022;
+}
+
+.lost {
+    height: calc(300px - 60px);
+    border-radius: 10px ;
+    padding: 30px;
+    background-color: #c2c2c2;
+}
+
+.LostContainer{
+    width: 400px;
+    justify-content: space-around;
+    margin-left: 50px;
+    display: flex;
+}
+
+.TimerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+    border: 2px solid #000000;
+    height: 300px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.TimerContainer button{
+    height: 50px;
+    padding: 0 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.TimerContainer button:hover{
+    background-color: red;
+    color: #fff;
+}
